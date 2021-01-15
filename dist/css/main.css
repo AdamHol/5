@@ -26,6 +26,7 @@ a {
 body {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 body #nav {
   width: 100%;
@@ -63,17 +64,16 @@ body .header {
   position: relative;
   z-index: -2;
   height: 471px;
+  overflow: hidden;
 }
 body .header-bg-block {
   position: absolute;
   width: 600px;
-  height: 426px;
+  height: 446px;
   background: #212331;
-  opacity: 50%;
   top: 45px;
   left: 160px;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b, -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
   box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b, -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
   z-index: -1;
 }
