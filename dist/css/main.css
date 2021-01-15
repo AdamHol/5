@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+h1,
+h2,
+h3,
+p,
+a {
+  color: #efefef;
+}
+
+.btn {
+  width: 145px;
+  height: 54px;
+  background: #ea5b58;
+  border: none;
+  border-radius: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +38,6 @@ body #nav {
 body #nav .logo {
   font-size: 1.5rem;
   padding: 20px 0 0 50px;
-  color: #efefef;
 }
 body #nav .nav-list {
   display: flex;
@@ -40,7 +55,35 @@ body #nav .nav-list li {
 }
 body #nav .nav-list li a {
   font-size: 1rem;
-  color: #efefef;
   height: 100%;
   padding: 20px;
+}
+body .header {
+  background: #161828;
+  position: relative;
+  z-index: -2;
+  height: 471px;
+}
+body .header-bg-block {
+  position: absolute;
+  width: 600px;
+  height: 426px;
+  background: #212331;
+  opacity: 50%;
+  top: 45px;
+  left: 160px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b, -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
+  box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b, -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
+  z-index: -1;
+}
+body .header-left .title {
+  padding: 116px 0 0 80px;
+}
+body .header-left .title-2 {
+  padding: 20px 80px;
+  font-weight: 500;
+}
+body .header-left .btn {
+  margin-left: 80px;
 }

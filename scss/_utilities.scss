@@ -1,2 +1,17 @@
-$navbar-bg: #0d0b11;
-$white: #efefef;
+@import "colors";
+
+h1,
+h2,
+h3,
+p,
+a {
+  color: $white;
+}
+
+.btn {
+  width: 145px;
+  height: 54px;
+  background: $button-bg;
+  border: none;
+  border-radius: 5px;
+}
