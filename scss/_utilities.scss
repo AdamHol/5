@@ -17,6 +17,12 @@ a {
   border-radius: 5px;
   color: $white;
   cursor: pointer;
+  &:hover,
+  &:active,
+  &:focus {
+    background: $button-bg-hover;
+    outline: none;
+  }
 }
 
 .line {

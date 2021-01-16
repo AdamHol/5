@@ -17,6 +17,10 @@ a {
   color: #efefef;
   cursor: pointer;
 }
+.btn:hover, .btn:active, .btn:focus {
+  background: #e94c49;
+  outline: none;
+}
 
 .line {
   background: #efefef;
@@ -89,10 +93,13 @@ body #nav .nav-list li a {
   height: 100%;
   padding: 20px;
 }
+body #nav .nav-list li a:hover {
+  background: #212331;
+  box-shadow: 0px 0px 10px 3px #a7a7a7;
+}
 body .header {
   background: #161828;
   position: relative;
-  z-index: -2;
   height: 471px;
   overflow: hidden;
   display: flex;
@@ -106,10 +113,11 @@ body .header-bg-block {
   left: 160px;
   border-radius: 15px;
   box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b, -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
-  z-index: -1;
+  opacity: 95%;
 }
 body .header-left {
   width: 50%;
+  z-index: 1;
 }
 body .header-left .title {
   padding: 116px 0 0 80px;
@@ -122,6 +130,7 @@ body .header-left .btn {
   margin-left: 80px;
 }
 body .header-right {
+  z-index: 1;
   width: 50%;
 }
 body .header-right-pic {
@@ -132,62 +141,62 @@ body .header-right-pic {
   border-radius: 20px;
   box-shadow: 0px 0px rgba(103, 104, 114, 0.6), -1px 1px rgba(103, 104, 114, 0.6), -2px 2px rgba(103, 104, 114, 0.6), -3px 3px rgba(103, 104, 114, 0.6), -4px 4px rgba(103, 104, 114, 0.6), -5px 5px rgba(103, 104, 114, 0.6), -6px 6px rgba(103, 104, 114, 0.6), -7px 7px rgba(103, 104, 114, 0.6), -6px 6px rgba(103, 104, 114, 0.6), -9px 9px rgba(103, 104, 114, 0.6), -10px 10px rgba(103, 104, 114, 0.6), -11px 11px rgba(103, 104, 114, 0.6), -12px 12px rgba(103, 104, 114, 0.6), -13px 13px rgba(103, 104, 114, 0.6), -14px 14px rgba(103, 104, 114, 0.6), -15px 15px rgba(103, 104, 114, 0.6), -16px 16px rgba(103, 104, 114, 0.6), -17px 17px rgba(103, 104, 114, 0.6), -16px 16px rgba(103, 104, 114, 0.6), -19px 19px rgba(103, 104, 114, 0.6), -20px 20px rgba(103, 104, 114, 0.6);
 }
-body .services {
+body #services {
   background: #475a85;
 }
-body .services-title {
+body #services .services-title {
   padding-top: 70px;
 }
-body .services-title-main {
+body #services .services-title-main {
   text-align: center;
   margin-bottom: 20px;
 }
-body .services-title-second {
+body #services .services-title-second {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 100;
 }
-body .services-title .line {
+body #services .services-title .line {
   margin-bottom: 50px;
 }
-body .services-kind {
+body #services .services-kind {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   color: #efefef;
   height: 300px;
 }
-body .services-kind .fas {
+body #services .services-kind .fas {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-body .services-kind h3 {
+body #services .services-kind h3 {
   margin-bottom: 10px;
 }
-body .services-kind p {
+body #services .services-kind p {
   font-weight: 100;
   font-size: smaller;
 }
-body .services-kind .btn {
+body #services .services-kind .btn {
   margin-top: 30px;
 }
-body .services-kind-design {
+body #services .services-kind-design {
   padding: 0 30px;
 }
-body .services-kind-trend {
+body #services .services-kind-trend {
   padding: 0 30px;
 }
-body .services-kind-responsive {
+body #services .services-kind-responsive {
   padding: 0 30px;
 }
-body .services-kind-awesome {
+body #services .services-kind-awesome {
   padding: 0 30px;
 }
-body .quote {
+body #quote {
   width: 100%;
   height: 424px;
 }
-body .quote-bg {
+body #quote .quote-bg {
   height: 100%;
   background: url("https://picsum.photos/id/507/1200/424") no-repeat center/cover;
   text-align: center;
@@ -271,6 +280,17 @@ body .portfolio-works-item {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+body .portfolio-works-item:hover {
+  box-shadow: 3px 3px 10px 10px #475a85;
+}
+body .portfolio-works-item:hover .fas {
+  color: #475a85;
+}
+body .portfolio-works-item h3 {
+  padding: 0 30px;
+}
+body .portfolio-works-item p {
   padding: 0 30px;
 }
 body .portfolio-works-item .fas {
@@ -302,38 +322,41 @@ body .portfolio .browse-all {
   background: none;
   align-self: center;
   cursor: pointer;
-  padding-left: 48%;
+  margin-left: 48%;
   font-weight: bold;
+}
+body .portfolio .browse-all:hover {
+  box-shadow: 0px 0px 10px 10px #a7a7a7;
 }
 body .portfolio .browse-all .fas {
   font-size: 2rem;
   font-weight: bolder;
 }
-body .customers-title {
+body #customers .customers-title {
   padding-top: 70px;
 }
-body .customers-title-main {
+body #customers .customers-title-main {
   text-align: center;
   margin-bottom: 20px;
   color: #000;
 }
-body .customers-title-second {
+body #customers .customers-title-second {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 100;
   color: #000;
 }
-body .customers-title .line {
+body #customers .customers-title .line {
   margin-bottom: 50px;
   background: #000;
 }
-body .customers-title .line:before {
+body #customers .customers-title .line:before {
   background: #000;
 }
-body .customers-title .line:after {
+body #customers .customers-title .line:after {
   background: #000;
 }
-body .customers-comments {
+body #customers .customers-comments {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -343,22 +366,22 @@ body .customers-comments {
   justify-content: center;
   align-items: center;
 }
-body .customers-comments input {
+body #customers .customers-comments input {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
 }
-body .customers-comments .wrapper {
+body #customers .customers-comments .wrapper {
   width: 50vw;
   display: flex;
   margin: 0 auto;
   background-color: white;
 }
-body .customers-comments .wrapper .slide {
+body #customers .customers-comments .wrapper .slide {
   width: 0;
 }
-body .customers-comments .wrapper .slide .content {
+body #customers .customers-comments .wrapper .slide .content {
   width: 50vw;
   height: 100%;
   padding: 30px;
@@ -369,36 +392,36 @@ body .customers-comments .wrapper .slide .content {
   overflow-y: auto;
   display: flex;
 }
-body .customers-comments .wrapper .slide .content-pic {
+body #customers .customers-comments .wrapper .slide .content-pic {
   border-radius: 50%;
   height: 200px;
 }
-body .customers-comments .wrapper .slide .content-comment {
+body #customers .customers-comments .wrapper .slide .content-comment {
   padding: 20px 100px;
 }
-body .customers-comments .wrapper .slide .content-comment p {
+body #customers .customers-comments .wrapper .slide .content-comment p {
   color: #000;
   padding-top: 20px;
 }
-body .customers-comments .wrapper .slide .content-comment .name {
+body #customers .customers-comments .wrapper .slide .content-comment .name {
   font-weight: bold;
 }
-body .customers #i_1:checked ~ .wrapper .content1,
-body .customers #i_2:checked ~ .wrapper .content2,
-body .customers #i_3:checked ~ .wrapper .content3,
-body .customers #i_4:checked ~ .wrapper .content4 {
+body #customers #i_1:checked ~ .wrapper .content1,
+body #customers #i_2:checked ~ .wrapper .content2,
+body #customers #i_3:checked ~ .wrapper .content3,
+body #customers #i_4:checked ~ .wrapper .content4 {
   opacity: 1;
   pointer-events: auto;
 }
-body .customers label {
+body #customers label {
   color: #e0e0e0;
   transition-duration: 0.6s;
   cursor: pointer;
 }
-body .customers #i_1:checked ~ .controls label[for=i_1],
-body .customers #i_2:checked ~ .controls label[for=i_2],
-body .customers #i_3:checked ~ .controls label[for=i_3],
-body .customers #i_4:checked ~ .controls label[for=i_4] {
+body #customers #i_1:checked ~ .controls label[for=i_1],
+body #customers #i_2:checked ~ .controls label[for=i_2],
+body #customers #i_3:checked ~ .controls label[for=i_3],
+body #customers #i_4:checked ~ .controls label[for=i_4] {
   color: #424242;
 }
 body .contact-us {
@@ -434,58 +457,70 @@ body .contact-title-second {
 body .contact-title .line {
   margin-bottom: 50px;
 }
-body .contact-rest {
+body .contact #contact-rest {
   display: flex;
 }
-body .contact-rest-details {
+body .contact #contact-rest .contact-rest-details {
   width: 50%;
   padding-left: 100px;
 }
-body .contact-rest-details h3 {
+body .contact #contact-rest .contact-rest-details h3 {
   margin-bottom: 10px;
 }
-body .contact-rest-details h4 {
+body .contact #contact-rest .contact-rest-details h4 {
   margin-bottom: 20px;
 }
-body .contact-rest-details p {
+body .contact #contact-rest .contact-rest-details p {
   margin-bottom: 10px;
 }
-body .contact-rest-details p .fas {
+body .contact #contact-rest .contact-rest-details p .fas {
   margin-right: 10px;
 }
-body .contact-rest-details p .fa-map-marker-alt {
+body .contact #contact-rest .contact-rest-details p .fa-map-marker-alt {
   margin-left: 5px;
 }
-body .contact-rest-wrapper {
+body .contact #contact-rest .contact-rest-details-media {
+  font-size: 2rem;
+  color: #efefef;
+  margin: 40px 0 20px 0;
+}
+body .contact #contact-rest .contact-rest-details-media .fab {
+  margin-right: 10px;
+}
+body .contact #contact-rest .contact-rest-details-media .fab:hover {
+  color: #a7a7a7;
+  cursor: pointer;
+}
+body .contact #contact-rest .contact-rest-wrapper {
   width: 50%;
 }
-body .contact-rest-wrapper-form {
+body .contact #contact-rest .contact-rest-wrapper-form {
   margin: 0 auto;
   width: 80%;
   height: 250px;
   display: grid;
-  grid-template-areas: "name name email email" "message message message message" "message message message message" "button . . .";
+  grid-template-areas: "name name email email" "message message message message" "message message message message" "message message message message" "button . . .";
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 40px);
+  grid-template-rows: repeat(5, 40px);
 }
-body .contact-rest-wrapper-form input,
-body .contact-rest-wrapper-form textarea {
+body .contact #contact-rest .contact-rest-wrapper-form input,
+body .contact #contact-rest .contact-rest-wrapper-form textarea {
   outline: none;
   border: none;
   margin-bottom: 10px;
   border-radius: 3px;
 }
-body .contact-rest-wrapper-form input[type=name] {
+body .contact #contact-rest .contact-rest-wrapper-form input[type=name] {
   grid-area: name;
   margin-right: 10px;
 }
-body .contact-rest-wrapper-form input[type=email] {
+body .contact #contact-rest .contact-rest-wrapper-form input[type=email] {
   grid-area: email;
 }
-body .contact-rest-wrapper-form textarea {
+body .contact #contact-rest .contact-rest-wrapper-form textarea {
   grid-area: message;
   resize: none;
 }
-body .contact-rest-wrapper-form button {
+body .contact #contact-rest .contact-rest-wrapper-form button {
   grid-area: button;
 }
