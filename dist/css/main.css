@@ -58,11 +58,14 @@ a {
   box-sizing: border-box;
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+}
+html body {
   max-width: 1200px;
   margin: 0 auto;
 }
-body #nav {
+html body #nav {
   width: 100%;
   height: 75px;
   margin: 0 auto;
@@ -70,41 +73,41 @@ body #nav {
   justify-content: space-between;
   background: #0d0b11;
 }
-body #nav .logo {
+html body #nav .logo {
   font-size: 1.5rem;
   padding: 20px 0 0 50px;
 }
-body #nav .nav-list {
+html body #nav .nav-list {
   display: flex;
   justify-content: space-around;
   list-style: none;
   width: 50%;
   margin-right: 100px;
 }
-body #nav .nav-list li {
+html body #nav .nav-list li {
   display: inline-block;
   width: 20%;
   height: 100%;
   text-align: center;
   padding-top: 25px;
 }
-body #nav .nav-list li a {
+html body #nav .nav-list li a {
   font-size: 1rem;
   height: 100%;
   padding: 20px;
 }
-body #nav .nav-list li a:hover {
+html body #nav .nav-list li a:hover {
   background: #212331;
   box-shadow: 0px 0px 10px 3px #a7a7a7;
 }
-body .header {
+html body .header {
   background: #161828;
   position: relative;
   height: 471px;
   overflow: hidden;
   display: flex;
 }
-body .header-bg-block {
+html body .header-bg-block {
   position: absolute;
   width: 600px;
   height: 446px;
@@ -115,25 +118,25 @@ body .header-bg-block {
   box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b, -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
   opacity: 95%;
 }
-body .header-left {
+html body .header-left {
   width: 50%;
   z-index: 1;
 }
-body .header-left .title {
+html body .header-left .title {
   padding: 116px 0 0 80px;
 }
-body .header-left .title-2 {
+html body .header-left .title-2 {
   padding: 20px 80px;
   font-weight: 500;
 }
-body .header-left .btn {
+html body .header-left .btn {
   margin-left: 80px;
 }
-body .header-right {
+html body .header-right {
   z-index: 1;
   width: 50%;
 }
-body .header-right-pic {
+html body .header-right-pic {
   margin: 80px;
   height: 347px;
   width: 464px;
@@ -141,133 +144,133 @@ body .header-right-pic {
   border-radius: 20px;
   box-shadow: 0px 0px rgba(103, 104, 114, 0.6), -1px 1px rgba(103, 104, 114, 0.6), -2px 2px rgba(103, 104, 114, 0.6), -3px 3px rgba(103, 104, 114, 0.6), -4px 4px rgba(103, 104, 114, 0.6), -5px 5px rgba(103, 104, 114, 0.6), -6px 6px rgba(103, 104, 114, 0.6), -7px 7px rgba(103, 104, 114, 0.6), -6px 6px rgba(103, 104, 114, 0.6), -9px 9px rgba(103, 104, 114, 0.6), -10px 10px rgba(103, 104, 114, 0.6), -11px 11px rgba(103, 104, 114, 0.6), -12px 12px rgba(103, 104, 114, 0.6), -13px 13px rgba(103, 104, 114, 0.6), -14px 14px rgba(103, 104, 114, 0.6), -15px 15px rgba(103, 104, 114, 0.6), -16px 16px rgba(103, 104, 114, 0.6), -17px 17px rgba(103, 104, 114, 0.6), -16px 16px rgba(103, 104, 114, 0.6), -19px 19px rgba(103, 104, 114, 0.6), -20px 20px rgba(103, 104, 114, 0.6);
 }
-body #services {
+html body #services {
   background: #475a85;
 }
-body #services .services-title {
+html body #services .services-title {
   padding-top: 70px;
 }
-body #services .services-title-main {
+html body #services .services-title-main {
   text-align: center;
   margin-bottom: 20px;
 }
-body #services .services-title-second {
+html body #services .services-title-second {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 100;
 }
-body #services .services-title .line {
+html body #services .services-title .line {
   margin-bottom: 50px;
 }
-body #services .services-kind {
+html body #services .services-kind {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
   color: #efefef;
   height: 300px;
 }
-body #services .services-kind .fas {
+html body #services .services-kind .fas {
   font-size: 2rem;
   margin-bottom: 20px;
 }
-body #services .services-kind h3 {
+html body #services .services-kind h3 {
   margin-bottom: 10px;
 }
-body #services .services-kind p {
+html body #services .services-kind p {
   font-weight: 100;
   font-size: smaller;
 }
-body #services .services-kind .btn {
+html body #services .services-kind .btn {
   margin-top: 30px;
 }
-body #services .services-kind-design {
+html body #services .services-kind-design {
   padding: 0 30px;
 }
-body #services .services-kind-trend {
+html body #services .services-kind-trend {
   padding: 0 30px;
 }
-body #services .services-kind-responsive {
+html body #services .services-kind-responsive {
   padding: 0 30px;
 }
-body #services .services-kind-awesome {
+html body #services .services-kind-awesome {
   padding: 0 30px;
 }
-body #quote {
+html body #quote {
   width: 100%;
   height: 424px;
 }
-body #quote .quote-bg {
+html body #quote .quote-bg {
   height: 100%;
   background: url("https://picsum.photos/id/507/1200/424") no-repeat center/cover;
   text-align: center;
   padding-top: 150px;
   font-size: 3rem;
 }
-body .portfolio-title {
+html body .portfolio-title {
   padding-top: 70px;
 }
-body .portfolio-title-main {
+html body .portfolio-title-main {
   text-align: center;
   margin-bottom: 20px;
   color: #000;
 }
-body .portfolio-title-second {
+html body .portfolio-title-second {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 100;
   color: #000;
 }
-body .portfolio-title .line {
+html body .portfolio-title .line {
   margin-bottom: 50px;
   background: #000;
 }
-body .portfolio-title .line:before {
+html body .portfolio-title .line:before {
   background: #000;
 }
-body .portfolio-title .line:after {
+html body .portfolio-title .line:after {
   background: #000;
 }
-body .portfolio-sort {
+html body .portfolio-sort {
   display: flex;
   justify-content: center;
 }
-body .portfolio-sort-all {
+html body .portfolio-sort-all {
   text-decoration: none;
   border: none;
   background: none;
   font-size: 1rem;
   color: #a7a7a7;
 }
-body .portfolio-sort-all:hover, body .portfolio-sort-all:focus, body .portfolio-sort-all:active {
+html body .portfolio-sort-all:hover, html body .portfolio-sort-all:focus, html body .portfolio-sort-all:active {
   color: #000;
   outline: none;
 }
-body .portfolio-sort-web {
+html body .portfolio-sort-web {
   text-decoration: none;
   border: none;
   background: none;
   font-size: 1rem;
   color: #a7a7a7;
 }
-body .portfolio-sort-web:hover, body .portfolio-sort-web:focus, body .portfolio-sort-web:active {
+html body .portfolio-sort-web:hover, html body .portfolio-sort-web:focus, html body .portfolio-sort-web:active {
   color: #000;
   outline: none;
 }
-body .portfolio-sort-print {
+html body .portfolio-sort-print {
   text-decoration: none;
   border: none;
   background: none;
   font-size: 1rem;
   color: #a7a7a7;
 }
-body .portfolio-sort-print:hover, body .portfolio-sort-print:focus, body .portfolio-sort-print:active {
+html body .portfolio-sort-print:hover, html body .portfolio-sort-print:focus, html body .portfolio-sort-print:active {
   color: #000;
   outline: none;
 }
-body .portfolio-sort span {
+html body .portfolio-sort span {
   margin: 0 5px;
 }
-body .portfolio-works {
+html body .portfolio-works {
   padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -275,48 +278,48 @@ body .portfolio-works {
   grid-gap: 20px;
   text-align: center;
 }
-body .portfolio-works-item {
+html body .portfolio-works-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-body .portfolio-works-item:hover {
+html body .portfolio-works-item:hover {
   box-shadow: 3px 3px 10px 10px #475a85;
 }
-body .portfolio-works-item:hover .fas {
+html body .portfolio-works-item:hover .fas {
   color: #475a85;
 }
-body .portfolio-works-item h3 {
+html body .portfolio-works-item h3 {
   padding: 0 30px;
 }
-body .portfolio-works-item p {
+html body .portfolio-works-item p {
   padding: 0 30px;
 }
-body .portfolio-works-item .fas {
+html body .portfolio-works-item .fas {
   margin-top: 20px;
   font-size: 2rem;
   color: white;
 }
-body .portfolio-works .item1 {
+html body .portfolio-works .item1 {
   background: url("https://picsum.photos/id/10/200/300") no-repeat center center/cover;
 }
-body .portfolio-works .item2 {
+html body .portfolio-works .item2 {
   background: url("https://picsum.photos/id/26/200/300") no-repeat center center/cover;
 }
-body .portfolio-works .item3 {
+html body .portfolio-works .item3 {
   background: url("https://picsum.photos/id/33/200/300") no-repeat center center/cover;
 }
-body .portfolio-works .item4 {
+html body .portfolio-works .item4 {
   background: url("https://picsum.photos/id/44/200/300") no-repeat center center/cover;
 }
-body .portfolio-works .item5 {
+html body .portfolio-works .item5 {
   background: url("https://picsum.photos/id/58/200/300") no-repeat center center/cover;
 }
-body .portfolio-works .item6 {
+html body .portfolio-works .item6 {
   background: url("https://picsum.photos/id/60/200/300") no-repeat center center/cover;
 }
-body .portfolio .browse-all {
+html body .portfolio .browse-all {
   text-decoration: none;
   border: none;
   background: none;
@@ -325,38 +328,38 @@ body .portfolio .browse-all {
   margin-left: 48%;
   font-weight: bold;
 }
-body .portfolio .browse-all:hover {
+html body .portfolio .browse-all:hover {
   box-shadow: 0px 0px 10px 10px #a7a7a7;
 }
-body .portfolio .browse-all .fas {
+html body .portfolio .browse-all .fas {
   font-size: 2rem;
   font-weight: bolder;
 }
-body #customers .customers-title {
+html body #customers .customers-title {
   padding-top: 70px;
 }
-body #customers .customers-title-main {
+html body #customers .customers-title-main {
   text-align: center;
   margin-bottom: 20px;
   color: #000;
 }
-body #customers .customers-title-second {
+html body #customers .customers-title-second {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 100;
   color: #000;
 }
-body #customers .customers-title .line {
+html body #customers .customers-title .line {
   margin-bottom: 50px;
   background: #000;
 }
-body #customers .customers-title .line:before {
+html body #customers .customers-title .line:before {
   background: #000;
 }
-body #customers .customers-title .line:after {
+html body #customers .customers-title .line:after {
   background: #000;
 }
-body #customers .customers-comments {
+html body #customers .customers-comments {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -366,22 +369,22 @@ body #customers .customers-comments {
   justify-content: center;
   align-items: center;
 }
-body #customers .customers-comments input {
+html body #customers .customers-comments input {
   opacity: 0;
   width: 0;
   height: 0;
   position: absolute;
 }
-body #customers .customers-comments .wrapper {
+html body #customers .customers-comments .wrapper {
   width: 50vw;
   display: flex;
   margin: 0 auto;
   background-color: white;
 }
-body #customers .customers-comments .wrapper .slide {
+html body #customers .customers-comments .wrapper .slide {
   width: 0;
 }
-body #customers .customers-comments .wrapper .slide .content {
+html body #customers .customers-comments .wrapper .slide .content {
   width: 50vw;
   height: 100%;
   padding: 30px;
@@ -392,109 +395,116 @@ body #customers .customers-comments .wrapper .slide .content {
   overflow-y: auto;
   display: flex;
 }
-body #customers .customers-comments .wrapper .slide .content-pic {
+html body #customers .customers-comments .wrapper .slide .content-pic {
   border-radius: 50%;
   height: 200px;
 }
-body #customers .customers-comments .wrapper .slide .content-comment {
+html body #customers .customers-comments .wrapper .slide .content-comment {
   padding: 20px 100px;
 }
-body #customers .customers-comments .wrapper .slide .content-comment p {
+html body #customers .customers-comments .wrapper .slide .content-comment p {
   color: #000;
   padding-top: 20px;
 }
-body #customers .customers-comments .wrapper .slide .content-comment .name {
+html body #customers .customers-comments .wrapper .slide .content-comment .name {
   font-weight: bold;
 }
-body #customers #i_1:checked ~ .wrapper .content1,
-body #customers #i_2:checked ~ .wrapper .content2,
-body #customers #i_3:checked ~ .wrapper .content3,
-body #customers #i_4:checked ~ .wrapper .content4 {
+html body #customers #i_1:checked ~ .wrapper .content1,
+html body #customers #i_2:checked ~ .wrapper .content2,
+html body #customers #i_3:checked ~ .wrapper .content3,
+html body #customers #i_4:checked ~ .wrapper .content4 {
   opacity: 1;
   pointer-events: auto;
 }
-body #customers label {
+html body #customers label {
   color: #e0e0e0;
   transition-duration: 0.6s;
   cursor: pointer;
 }
-body #customers #i_1:checked ~ .controls label[for=i_1],
-body #customers #i_2:checked ~ .controls label[for=i_2],
-body #customers #i_3:checked ~ .controls label[for=i_3],
-body #customers #i_4:checked ~ .controls label[for=i_4] {
+html body #customers label:hover {
+  color: #475a85;
+}
+html body #customers #i_1:checked ~ .controls label[for=i_1],
+html body #customers #i_2:checked ~ .controls label[for=i_2],
+html body #customers #i_3:checked ~ .controls label[for=i_3],
+html body #customers #i_4:checked ~ .controls label[for=i_4] {
   color: #424242;
 }
-body .contact-us {
+html body .contact-us {
   margin-top: 50px;
   width: 100%;
   height: 424px;
 }
-body .contact-us-bg {
+html body .contact-us-bg {
   height: 100%;
   background: url("https://picsum.photos/id/503/1200/424") no-repeat center/cover;
   text-align: center;
   padding-top: 150px;
   font-size: 3rem;
 }
-body .contact {
+html body .contact {
   background: #475a85;
 }
-body .contact-map {
+html body .contact-map {
   width: 100%;
 }
-body .contact-title {
+html body .contact-title {
   padding-top: 70px;
 }
-body .contact-title-main {
+html body .contact-title-main {
   text-align: center;
   margin-bottom: 20px;
 }
-body .contact-title-second {
+html body .contact-title-second {
   text-align: center;
   margin-bottom: 20px;
   font-weight: 100;
 }
-body .contact-title .line {
+html body .contact-title .line {
   margin-bottom: 50px;
 }
-body .contact #contact-rest {
+html body .contact #contact-rest {
   display: flex;
 }
-body .contact #contact-rest .contact-rest-details {
+html body .contact #contact-rest .contact-rest-details {
   width: 50%;
   padding-left: 100px;
 }
-body .contact #contact-rest .contact-rest-details h3 {
+html body .contact #contact-rest .contact-rest-details h3 {
   margin-bottom: 10px;
 }
-body .contact #contact-rest .contact-rest-details h4 {
+html body .contact #contact-rest .contact-rest-details h4 {
   margin-bottom: 20px;
 }
-body .contact #contact-rest .contact-rest-details p {
+html body .contact #contact-rest .contact-rest-details p {
   margin-bottom: 10px;
 }
-body .contact #contact-rest .contact-rest-details p .fas {
+html body .contact #contact-rest .contact-rest-details p a:hover {
+  color: #a7a7a7;
+}
+html body .contact #contact-rest .contact-rest-details p .fas {
   margin-right: 10px;
 }
-body .contact #contact-rest .contact-rest-details p .fa-map-marker-alt {
+html body .contact #contact-rest .contact-rest-details p .fa-map-marker-alt {
   margin-left: 5px;
 }
-body .contact #contact-rest .contact-rest-details-media {
+html body .contact #contact-rest .contact-rest-details-media {
   font-size: 2rem;
   color: #efefef;
-  margin: 40px 0 20px 0;
+  margin: 40px 0 50px 0;
 }
-body .contact #contact-rest .contact-rest-details-media .fab {
+html body .contact #contact-rest .contact-rest-details-media .fab {
   margin-right: 10px;
 }
-body .contact #contact-rest .contact-rest-details-media .fab:hover {
+html body .contact #contact-rest .contact-rest-details-media .fab:hover {
   color: #a7a7a7;
   cursor: pointer;
 }
-body .contact #contact-rest .contact-rest-wrapper {
+html body .contact #contact-rest .contact-rest-wrapper {
   width: 50%;
+  position: relative;
 }
-body .contact #contact-rest .contact-rest-wrapper-form {
+html body .contact #contact-rest .contact-rest-wrapper-form {
   margin: 0 auto;
   width: 80%;
   height: 250px;
@@ -503,24 +513,51 @@ body .contact #contact-rest .contact-rest-wrapper-form {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 40px);
 }
-body .contact #contact-rest .contact-rest-wrapper-form input,
-body .contact #contact-rest .contact-rest-wrapper-form textarea {
+html body .contact #contact-rest .contact-rest-wrapper-form input,
+html body .contact #contact-rest .contact-rest-wrapper-form textarea {
   outline: none;
   border: none;
   margin-bottom: 10px;
   border-radius: 3px;
 }
-body .contact #contact-rest .contact-rest-wrapper-form input[type=name] {
+html body .contact #contact-rest .contact-rest-wrapper-form input[type=name] {
   grid-area: name;
   margin-right: 10px;
 }
-body .contact #contact-rest .contact-rest-wrapper-form input[type=email] {
+html body .contact #contact-rest .contact-rest-wrapper-form input[type=email] {
   grid-area: email;
 }
-body .contact #contact-rest .contact-rest-wrapper-form textarea {
+html body .contact #contact-rest .contact-rest-wrapper-form textarea {
   grid-area: message;
   resize: none;
 }
-body .contact #contact-rest .contact-rest-wrapper-form button {
+html body .contact #contact-rest .contact-rest-wrapper-form button {
   grid-area: button;
+}
+html body .contact .to-nav {
+  display: flex;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #d1d1d1;
+  right: 20px;
+  bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+html body .contact .to-nav .fas {
+  color: #a7a7a7;
+  font-size: 2rem;
+}
+html body .footer {
+  background: #212331;
+  text-align: center;
+  padding: 30px 0;
+}
+html body .footer p {
+  color: #a7a7a7;
+}
+html body .footer p:last-child {
+  font-size: 1.5rem;
 }

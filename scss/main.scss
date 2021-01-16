@@ -10,575 +10,615 @@
   text-decoration: none;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
 
-body {
-  max-width: 1200px;
-  margin: 0 auto;
-
-  #nav {
-    width: 100%;
-    height: 75px;
+  body {
+    max-width: 1200px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    background: $navbar-bg;
 
-    .logo {
-      font-size: 1.5rem;
-      padding: 20px 0 0 50px;
-    }
-
-    .nav-list {
+    #nav {
+      width: 100%;
+      height: 75px;
+      margin: 0 auto;
       display: flex;
-      justify-content: space-around;
-      list-style: none;
-      width: 50%;
-      margin-right: 100px;
+      justify-content: space-between;
+      background: $navbar-bg;
 
-      li {
-        display: inline-block;
-        width: 20%;
-        height: 100%;
-        text-align: center;
-        padding-top: 25px;
+      .logo {
+        font-size: 1.5rem;
+        padding: 20px 0 0 50px;
+      }
 
-        a {
-          font-size: 1rem;
+      .nav-list {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        width: 50%;
+        margin-right: 100px;
+
+        li {
+          display: inline-block;
+          width: 20%;
           height: 100%;
-          padding: 20px;
+          text-align: center;
+          padding-top: 25px;
 
-          &:hover {
-            background: $header-bg-block;
-            // color: $light-blue-bg;
-            box-shadow: 0px 0px 10px 3px $grey;
+          a {
+            font-size: 1rem;
+            height: 100%;
+            padding: 20px;
+
+            &:hover {
+              background: $header-bg-block;
+              // color: $light-blue-bg;
+              box-shadow: 0px 0px 10px 3px $grey;
+            }
           }
         }
       }
     }
-  }
 
-  .header {
-    background: $header-bg;
-    position: relative;
-    height: 471px;
-    overflow: hidden;
-    display: flex;
-
-    &-bg-block {
-      position: absolute;
-      width: 600px;
-      height: 446px;
-      background: $header-bg-block;
-      top: 45px;
-      left: 160px;
-      border-radius: 15px;
-      box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b,
-        -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
-      opacity: 95%;
-    }
-
-    &-left {
-      width: 50%;
-      z-index: 1;
-
-      .title {
-        padding: 116px 0 0 80px;
-      }
-
-      .title-2 {
-        padding: 20px 80px;
-        font-weight: 500;
-      }
-
-      .btn {
-        margin-left: 80px;
-      }
-    }
-
-    &-right {
-      z-index: 1;
-      width: 50%;
-
-      &-pic {
-        margin: 80px;
-        height: 347px;
-        width: 464px;
-        overflow: hidden;
-        border-radius: 20px;
-        box-shadow: 0px 0px rgba(103, 104, 114, 0.6), -1px 1px rgba(103, 104, 114, 0.6),
-          -2px 2px rgba(103, 104, 114, 0.6), -3px 3px rgba(103, 104, 114, 0.6),
-          -4px 4px rgba(103, 104, 114, 0.6), -5px 5px rgba(103, 104, 114, 0.6),
-          -6px 6px rgba(103, 104, 114, 0.6), -7px 7px rgba(103, 104, 114, 0.6),
-          -6px 6px rgba(103, 104, 114, 0.6), -9px 9px rgba(103, 104, 114, 0.6),
-          -10px 10px rgba(103, 104, 114, 0.6), -11px 11px rgba(103, 104, 114, 0.6),
-          -12px 12px rgba(103, 104, 114, 0.6), -13px 13px rgba(103, 104, 114, 0.6),
-          -14px 14px rgba(103, 104, 114, 0.6), -15px 15px rgba(103, 104, 114, 0.6),
-          -16px 16px rgba(103, 104, 114, 0.6), -17px 17px rgba(103, 104, 114, 0.6),
-          -16px 16px rgba(103, 104, 114, 0.6), -19px 19px rgba(103, 104, 114, 0.6),
-          -20px 20px rgba(103, 104, 114, 0.6);
-      }
-    }
-  }
-
-  #services {
-    background: $light-blue-bg;
-
-    .services-title {
-      padding-top: 70px;
-      &-main {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      &-second {
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: 100;
-      }
-
-      .line {
-        margin-bottom: 50px;
-      }
-    }
-
-    .services-kind {
+    .header {
+      background: $header-bg;
+      position: relative;
+      height: 471px;
+      overflow: hidden;
       display: flex;
-      justify-content: space-evenly;
-      text-align: center;
-      color: $white;
-      height: 300px;
 
-      .fas {
-        font-size: 2rem;
-        margin-bottom: 20px;
-      }
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-weight: 100;
-        font-size: smaller;
+      &-bg-block {
+        position: absolute;
+        width: 600px;
+        height: 446px;
+        background: $header-bg-block;
+        top: 45px;
+        left: 160px;
+        border-radius: 15px;
+        box-shadow: 0px 10px 13px -7px #000000, -19px 6px 0px -6px #1a1b2b,
+          -36px 11px 0px -11px #1a1b2b, -50px 18px 0px -18px #1a1b2b;
+        opacity: 95%;
       }
 
-      .btn {
-        margin-top: 30px;
+      &-left {
+        width: 50%;
+        z-index: 1;
+
+        .title {
+          padding: 116px 0 0 80px;
+        }
+
+        .title-2 {
+          padding: 20px 80px;
+          font-weight: 500;
+        }
+
+        .btn {
+          margin-left: 80px;
+        }
       }
 
-      &-design {
-        padding: 0 30px;
-      }
-      &-trend {
-        padding: 0 30px;
-      }
-      &-responsive {
-        padding: 0 30px;
-      }
-      &-awesome {
-        padding: 0 30px;
+      &-right {
+        z-index: 1;
+        width: 50%;
+
+        &-pic {
+          margin: 80px;
+          height: 347px;
+          width: 464px;
+          overflow: hidden;
+          border-radius: 20px;
+          box-shadow: 0px 0px rgba(103, 104, 114, 0.6), -1px 1px rgba(103, 104, 114, 0.6),
+            -2px 2px rgba(103, 104, 114, 0.6), -3px 3px rgba(103, 104, 114, 0.6),
+            -4px 4px rgba(103, 104, 114, 0.6), -5px 5px rgba(103, 104, 114, 0.6),
+            -6px 6px rgba(103, 104, 114, 0.6), -7px 7px rgba(103, 104, 114, 0.6),
+            -6px 6px rgba(103, 104, 114, 0.6), -9px 9px rgba(103, 104, 114, 0.6),
+            -10px 10px rgba(103, 104, 114, 0.6), -11px 11px rgba(103, 104, 114, 0.6),
+            -12px 12px rgba(103, 104, 114, 0.6), -13px 13px rgba(103, 104, 114, 0.6),
+            -14px 14px rgba(103, 104, 114, 0.6), -15px 15px rgba(103, 104, 114, 0.6),
+            -16px 16px rgba(103, 104, 114, 0.6), -17px 17px rgba(103, 104, 114, 0.6),
+            -16px 16px rgba(103, 104, 114, 0.6), -19px 19px rgba(103, 104, 114, 0.6),
+            -20px 20px rgba(103, 104, 114, 0.6);
+        }
       }
     }
-  }
 
-  #quote {
-    width: 100%;
-    height: 424px;
+    #services {
+      background: $light-blue-bg;
 
-    .quote-bg {
-      height: 100%;
-      background: url("https://picsum.photos/id/507/1200/424") no-repeat center/cover;
-      text-align: center;
-      padding-top: 150px;
-      font-size: 3rem;
-    }
-  }
-  .portfolio {
-    &-title {
-      padding-top: 70px;
+      .services-title {
+        padding-top: 70px;
+        &-main {
+          text-align: center;
+          margin-bottom: 20px;
+        }
 
-      &-main {
+        &-second {
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: 100;
+        }
+
+        .line {
+          margin-bottom: 50px;
+        }
+      }
+
+      .services-kind {
+        display: flex;
+        justify-content: space-evenly;
         text-align: center;
-        margin-bottom: 20px;
-        color: $black;
-      }
+        color: $white;
+        height: 300px;
 
-      &-second {
+        .fas {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+
+        h3 {
+          margin-bottom: 10px;
+        }
+
+        p {
+          font-weight: 100;
+          font-size: smaller;
+        }
+
+        .btn {
+          margin-top: 30px;
+        }
+
+        &-design {
+          padding: 0 30px;
+        }
+        &-trend {
+          padding: 0 30px;
+        }
+        &-responsive {
+          padding: 0 30px;
+        }
+        &-awesome {
+          padding: 0 30px;
+        }
+      }
+    }
+
+    #quote {
+      width: 100%;
+      height: 424px;
+
+      .quote-bg {
+        height: 100%;
+        background: url("https://picsum.photos/id/507/1200/424") no-repeat center/cover;
         text-align: center;
-        margin-bottom: 20px;
-        font-weight: 100;
-        color: $black;
+        padding-top: 150px;
+        font-size: 3rem;
+      }
+    }
+    .portfolio {
+      &-title {
+        padding-top: 70px;
+
+        &-main {
+          text-align: center;
+          margin-bottom: 20px;
+          color: $black;
+        }
+
+        &-second {
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: 100;
+          color: $black;
+        }
+
+        .line {
+          margin-bottom: 50px;
+          background: $black;
+
+          &:before {
+            background: $black;
+          }
+          &:after {
+            background: $black;
+          }
+        }
       }
 
-      .line {
-        margin-bottom: 50px;
-        background: $black;
+      &-sort {
+        display: flex;
+        justify-content: center;
 
-        &:before {
-          background: $black;
+        &-all {
+          text-decoration: none;
+          border: none;
+          background: none;
+          font-size: 1rem;
+          color: $grey;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $black;
+            outline: none;
+          }
         }
-        &:after {
-          background: $black;
+
+        &-web {
+          text-decoration: none;
+          border: none;
+          background: none;
+          font-size: 1rem;
+          color: $grey;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $black;
+            outline: none;
+          }
+        }
+
+        &-print {
+          text-decoration: none;
+          border: none;
+          background: none;
+          font-size: 1rem;
+          color: $grey;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $black;
+            outline: none;
+          }
+        }
+
+        span {
+          margin: 0 5px;
+        }
+      }
+
+      &-works {
+        padding: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 285px 285px;
+        grid-gap: 20px;
+        text-align: center;
+
+        &-item {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          &:hover {
+            box-shadow: 3px 3px 10px 10px $light-blue-bg;
+            .fas {
+              color: $light-blue-bg;
+            }
+          }
+
+          h3 {
+            padding: 0 30px;
+          }
+          p {
+            padding: 0 30px;
+          }
+
+          .fas {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: white;
+          }
+        }
+
+        .item1 {
+          background: url("https://picsum.photos/id/10/200/300") no-repeat center center/cover;
+        }
+        .item2 {
+          background: url("https://picsum.photos/id/26/200/300") no-repeat center center/cover;
+        }
+        .item3 {
+          background: url("https://picsum.photos/id/33/200/300") no-repeat center center/cover;
+        }
+        .item4 {
+          background: url("https://picsum.photos/id/44/200/300") no-repeat center center/cover;
+        }
+        .item5 {
+          background: url("https://picsum.photos/id/58/200/300") no-repeat center center/cover;
+        }
+        .item6 {
+          background: url("https://picsum.photos/id/60/200/300") no-repeat center center/cover;
+        }
+      }
+
+      .browse-all {
+        text-decoration: none;
+        border: none;
+        background: none;
+        align-self: center;
+        cursor: pointer;
+        margin-left: 48%;
+        font-weight: bold;
+
+        &:hover {
+          box-shadow: 0px 0px 10px 10px $grey;
+        }
+
+        .fas {
+          font-size: 2rem;
+          font-weight: bolder;
         }
       }
     }
 
-    &-sort {
-      display: flex;
-      justify-content: center;
+    #customers {
+      .customers-title {
+        padding-top: 70px;
 
-      &-all {
-        text-decoration: none;
-        border: none;
-        background: none;
-        font-size: 1rem;
-        color: $grey;
-
-        &:hover,
-        &:focus,
-        &:active {
+        &-main {
+          text-align: center;
+          margin-bottom: 20px;
           color: $black;
-          outline: none;
+        }
+
+        &-second {
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: 100;
+          color: $black;
+        }
+
+        .line {
+          margin-bottom: 50px;
+          background: $black;
+
+          &:before {
+            background: $black;
+          }
+          &:after {
+            background: $black;
+          }
         }
       }
 
-      &-web {
-        text-decoration: none;
-        border: none;
-        background: none;
-        font-size: 1rem;
-        color: $grey;
-
-        &:hover,
-        &:focus,
-        &:active {
-          color: $black;
-          outline: none;
-        }
-      }
-
-      &-print {
-        text-decoration: none;
-        border: none;
-        background: none;
-        font-size: 1rem;
-        color: $grey;
-
-        &:hover,
-        &:focus,
-        &:active {
-          color: $black;
-          outline: none;
-        }
-      }
-
-      span {
-        margin: 0 5px;
-      }
-    }
-
-    &-works {
-      padding: 50px 0;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 285px 285px;
-      grid-gap: 20px;
-      text-align: center;
-
-      &-item {
+      .customers-comments {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        &:hover {
-          box-shadow: 3px 3px 10px 10px $light-blue-bg;
-          .fas {
-            color: $light-blue-bg;
-          }
-        }
-
-        h3 {
-          padding: 0 30px;
-        }
-        p {
-          padding: 0 30px;
-        }
-
-        .fas {
-          margin-top: 20px;
-          font-size: 2rem;
-          color: white;
-        }
-      }
-
-      .item1 {
-        background: url("https://picsum.photos/id/10/200/300") no-repeat center center/cover;
-      }
-      .item2 {
-        background: url("https://picsum.photos/id/26/200/300") no-repeat center center/cover;
-      }
-      .item3 {
-        background: url("https://picsum.photos/id/33/200/300") no-repeat center center/cover;
-      }
-      .item4 {
-        background: url("https://picsum.photos/id/44/200/300") no-repeat center center/cover;
-      }
-      .item5 {
-        background: url("https://picsum.photos/id/58/200/300") no-repeat center center/cover;
-      }
-      .item6 {
-        background: url("https://picsum.photos/id/60/200/300") no-repeat center center/cover;
-      }
-    }
-
-    .browse-all {
-      text-decoration: none;
-      border: none;
-      background: none;
-      align-self: center;
-      cursor: pointer;
-      margin-left: 48%;
-      font-weight: bold;
-
-      &:hover {
-        box-shadow: 0px 0px 10px 10px $grey;
-      }
-
-      .fas {
-        font-size: 2rem;
-        font-weight: bolder;
-      }
-    }
-  }
-
-  #customers {
-    .customers-title {
-      padding-top: 70px;
-
-      &-main {
-        text-align: center;
-        margin-bottom: 20px;
-        color: $black;
-      }
-
-      &-second {
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: 100;
-        color: $black;
-      }
-
-      .line {
-        margin-bottom: 50px;
-        background: $black;
-
-        &:before {
-          background: $black;
-        }
-        &:after {
-          background: $black;
-        }
-      }
-    }
-
-    .customers-comments {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      input {
-        opacity: 0;
-        width: 0;
-        height: 0;
-        position: absolute;
-      }
-
-      .wrapper {
-        width: 50vw;
-        display: flex;
-        margin: 0 auto;
-        background-color: white;
-
-        .slide {
+        input {
+          opacity: 0;
           width: 0;
+          height: 0;
+          position: absolute;
+        }
 
-          .content {
-            width: 50vw;
-            height: 100%;
-            padding: 30px;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 0.6s;
-            max-height: 90vh;
-            overflow-y: auto;
-            display: flex;
+        .wrapper {
+          width: 50vw;
+          display: flex;
+          margin: 0 auto;
+          background-color: white;
 
-            &-pic {
-              border-radius: 50%;
-              height: 200px;
-            }
-            &-comment {
-              padding: 20px 100px;
-              p {
-                color: $black;
-                padding-top: 20px;
+          .slide {
+            width: 0;
+
+            .content {
+              width: 50vw;
+              height: 100%;
+              padding: 30px;
+              opacity: 0;
+              pointer-events: none;
+              transition: opacity 0.6s;
+              max-height: 90vh;
+              overflow-y: auto;
+              display: flex;
+
+              &-pic {
+                border-radius: 50%;
+                height: 200px;
               }
+              &-comment {
+                padding: 20px 100px;
+                p {
+                  color: $black;
+                  padding-top: 20px;
+                }
 
-              .name {
-                font-weight: bold;
+                .name {
+                  font-weight: bold;
+                }
               }
             }
           }
         }
       }
-    }
-    #i_1:checked ~ .wrapper .content1,
-    #i_2:checked ~ .wrapper .content2,
-    #i_3:checked ~ .wrapper .content3,
-    #i_4:checked ~ .wrapper .content4 {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    label {
-      color: #e0e0e0;
-      transition-duration: 0.6s;
-      cursor: pointer;
-    }
-
-    #i_1:checked ~ .controls label[for="i_1"],
-    #i_2:checked ~ .controls label[for="i_2"],
-    #i_3:checked ~ .controls label[for="i_3"],
-    #i_4:checked ~ .controls label[for="i_4"] {
-      color: #424242;
-    }
-  }
-
-  .contact-us {
-    margin-top: 50px;
-    width: 100%;
-    height: 424px;
-
-    &-bg {
-      height: 100%;
-      background: url("https://picsum.photos/id/503/1200/424") no-repeat center/cover;
-      text-align: center;
-      padding-top: 150px;
-      font-size: 3rem;
-    }
-  }
-
-  .contact {
-    background: $light-blue-bg;
-
-    &-map {
-      width: 100%;
-    }
-
-    &-title {
-      padding-top: 70px;
-
-      &-main {
-        text-align: center;
-        margin-bottom: 20px;
+      #i_1:checked ~ .wrapper .content1,
+      #i_2:checked ~ .wrapper .content2,
+      #i_3:checked ~ .wrapper .content3,
+      #i_4:checked ~ .wrapper .content4 {
+        opacity: 1;
+        pointer-events: auto;
       }
 
-      &-second {
-        text-align: center;
-        margin-bottom: 20px;
-        font-weight: 100;
-      }
-
-      .line {
-        margin-bottom: 50px;
-      }
-    }
-
-    #contact-rest {
-      display: flex;
-
-      .contact-rest-details {
-        width: 50%;
-        padding-left: 100px;
-
-        h3 {
-          margin-bottom: 10px;
+      label {
+        color: #e0e0e0;
+        transition-duration: 0.6s;
+        cursor: pointer;
+        &:hover {
+          color: $light-blue-bg;
         }
-        h4 {
+      }
+
+      #i_1:checked ~ .controls label[for="i_1"],
+      #i_2:checked ~ .controls label[for="i_2"],
+      #i_3:checked ~ .controls label[for="i_3"],
+      #i_4:checked ~ .controls label[for="i_4"] {
+        color: #424242;
+      }
+    }
+
+    .contact-us {
+      margin-top: 50px;
+      width: 100%;
+      height: 424px;
+
+      &-bg {
+        height: 100%;
+        background: url("https://picsum.photos/id/503/1200/424") no-repeat center/cover;
+        text-align: center;
+        padding-top: 150px;
+        font-size: 3rem;
+      }
+    }
+
+    .contact {
+      background: $light-blue-bg;
+
+      &-map {
+        width: 100%;
+      }
+
+      &-title {
+        padding-top: 70px;
+
+        &-main {
+          text-align: center;
           margin-bottom: 20px;
         }
-        p {
-          margin-bottom: 10px;
 
-          .fas {
-            margin-right: 10px;
+        &-second {
+          text-align: center;
+          margin-bottom: 20px;
+          font-weight: 100;
+        }
+
+        .line {
+          margin-bottom: 50px;
+        }
+      }
+
+      #contact-rest {
+        display: flex;
+
+        .contact-rest-details {
+          width: 50%;
+          padding-left: 100px;
+
+          h3 {
+            margin-bottom: 10px;
           }
+          h4 {
+            margin-bottom: 20px;
+          }
+          p {
+            margin-bottom: 10px;
+            a {
+              &:hover {
+                color: $grey;
+              }
+            }
+            .fas {
+              margin-right: 10px;
+            }
 
-          .fa-map-marker-alt {
-            margin-left: 5px;
+            .fa-map-marker-alt {
+              margin-left: 5px;
+            }
+          }
+          &-media {
+            font-size: 2rem;
+            color: $white;
+            margin: 40px 0 50px 0;
+
+            .fab {
+              margin-right: 10px;
+              &:hover {
+                color: $grey;
+                cursor: pointer;
+              }
+            }
           }
         }
-        &-media {
-          font-size: 2rem;
-          color: $white;
-          margin: 40px 0 20px 0;
 
-          .fab {
-            margin-right: 10px;
-            &:hover {
-              color: $grey;
-              cursor: pointer;
+        .contact-rest-wrapper {
+          width: 50%;
+          position: relative;
+          &-form {
+            margin: 0 auto;
+            width: 80%;
+            height: 250px;
+
+            display: grid;
+
+            grid-template-areas:
+              "name name email email" "message message message message"
+              "message message message message" "message message message message" "button . . .";
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 40px);
+
+            input,
+            textarea {
+              outline: none;
+              border: none;
+              margin-bottom: 10px;
+              border-radius: 3px;
+            }
+
+            input[type="name"] {
+              grid-area: name;
+              margin-right: 10px;
+            }
+            input[type="email"] {
+              grid-area: email;
+            }
+            textarea {
+              grid-area: message;
+              resize: none;
+            }
+            button {
+              grid-area: button;
             }
           }
         }
       }
+      .to-nav {
+        display: flex;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: $light-grey;
+        right: 20px;
+        bottom: 30px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
 
-      .contact-rest-wrapper {
-        width: 50%;
-
-        &-form {
-          margin: 0 auto;
-          width: 80%;
-          height: 250px;
-
-          display: grid;
-
-          grid-template-areas:
-            "name name email email" "message message message message"
-            "message message message message" "message message message message" "button . . .";
-
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(5, 40px);
-
-          input,
-          textarea {
-            outline: none;
-            border: none;
-            margin-bottom: 10px;
-            border-radius: 3px;
-          }
-
-          input[type="name"] {
-            grid-area: name;
-            margin-right: 10px;
-          }
-          input[type="email"] {
-            grid-area: email;
-          }
-          textarea {
-            grid-area: message;
-            resize: none;
-          }
-          button {
-            grid-area: button;
-          }
+        .fas {
+          color: $grey;
+          font-size: 2rem;
         }
+      }
+    }
+
+    .footer {
+      background: $header-bg-block;
+      text-align: center;
+      padding: 30px 0;
+
+      p {
+        color: $grey;
+      }
+      p:last-child {
+        font-size: 1.5rem;
       }
     }
   }
