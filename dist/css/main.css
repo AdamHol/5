@@ -523,13 +523,16 @@ html body .contact #contact-rest .contact-rest-wrapper-form textarea {
 html body .contact #contact-rest .contact-rest-wrapper-form input[type=name] {
   grid-area: name;
   margin-right: 10px;
+  padding: 5px;
 }
 html body .contact #contact-rest .contact-rest-wrapper-form input[type=email] {
   grid-area: email;
+  padding: 5px;
 }
 html body .contact #contact-rest .contact-rest-wrapper-form textarea {
   grid-area: message;
   resize: none;
+  padding: 5px;
 }
 html body .contact #contact-rest .contact-rest-wrapper-form button {
   grid-area: button;
