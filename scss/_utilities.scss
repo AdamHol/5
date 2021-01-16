@@ -14,4 +14,33 @@ a {
   background: $button-bg;
   border: none;
   border-radius: 5px;
+  color: $white;
+}
+
+.line {
+  background: $white;
+  width: 281px;
+  height: 1px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.line:before {
+  content: "";
+  position: absolute;
+  background: $white;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin: -6px 0px;
+}
+
+.line:after {
+  content: "";
+  position: absolute;
+  background: $white;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin: -6px 268px;
 }
