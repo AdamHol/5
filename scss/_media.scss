@@ -1,0 +1,131 @@
+@media screen and (max-width: 1450px) {
+  html {
+    body {
+      #customers {
+        .customers-comments {
+          .wrapper {
+            .slide {
+              .content {
+                padding: 10px;
+              }
+            }
+          }
+        }
+      }
+      #customers {
+        .customers-comments {
+          .wrapper {
+            .slide {
+              .content {
+                padding: 10px;
+                // flex-direction: column;
+                &-pic {
+                  height: 100px;
+                  width: 100px;
+                  align-self: center;
+                }
+                &-comment {
+                  padding: 20px 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  html {
+    body {
+      #nav {
+        .nav-list {
+          width: 50%;
+          li {
+            width: 150px;
+          }
+        }
+      }
+
+      .portfolio-works {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 285px 285px 285px;
+        width: 800px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  html {
+    body {
+      .header {
+        height: 400px;
+        .header-left {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          .title {
+            text-align: center;
+          }
+          .title-2 {
+            text-align: center;
+          }
+
+          .btn {
+            // margin: auto;
+            // justify-self: center;
+            // align-self: center;
+          }
+        }
+        .header-right {
+          display: none;
+        }
+      }
+
+      #services {
+        .services-title {
+          .line {
+            margin-bottom: 10px;
+          }
+        }
+        .services-kind {
+          flex-direction: column;
+          height: 950px;
+          justify-content: center;
+          text-align: center;
+          align-items: center;
+          .fas {
+            font-size: 2rem;
+          }
+
+          h3 {
+            margin-bottom: 10px;
+          }
+
+          p {
+            font-weight: 100;
+            font-size: smaller;
+            max-width: 400px;
+            width: 100%;
+          }
+
+          .btn {
+            margin-top: 30px;
+            margin-bottom: 20px;
+          }
+
+          &-padding {
+            padding: 0 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+}

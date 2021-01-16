@@ -16,6 +16,7 @@ html {
   body {
     max-width: 1200px;
     margin: 0 auto;
+    background: $light-grey;
 
     #nav {
       width: 100%;
@@ -168,16 +169,7 @@ html {
           margin-top: 30px;
         }
 
-        &-design {
-          padding: 0 30px;
-        }
-        &-trend {
-          padding: 0 30px;
-        }
-        &-responsive {
-          padding: 0 30px;
-        }
-        &-awesome {
+        &-padding {
           padding: 0 30px;
         }
       }
@@ -295,8 +287,13 @@ html {
 
           &:hover {
             box-shadow: 3px 3px 10px 10px $light-blue-bg;
-            .fas {
-              color: $light-blue-bg;
+            h3 {
+              font-size: 1.7rem;
+              font-weight: bolder;
+            }
+            p {
+              font-size: 1.3rem;
+              font-weight: bold;
             }
           }
 
@@ -626,3 +623,4 @@ html {
     }
   }
 }
+@import "media";
