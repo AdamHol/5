@@ -130,7 +130,6 @@
     body {
       header {
         #nav {
-          height: 150px;
           flex-direction: column;
           .logo {
             width: 100%;
@@ -139,7 +138,6 @@
           }
           .nav-list {
             width: 100%;
-            padding-bottom: 30px;
           }
         }
       }
@@ -212,6 +210,14 @@
 @media screen and (max-width: 530px) {
   html {
     body {
+      .header {
+        .header-left {
+          .title {
+            padding: 50px 20px 0px 20px;
+          }
+        }
+      }
+
       .portfolio {
         .portfolio-title {
           padding-top: 20px;
@@ -232,15 +238,22 @@
   html {
     body {
       #nav {
-        height: 400px;
-
         .logo {
-          padding-bottom: 5px;
+          margin-bottom: 15px;
         }
 
         .nav-list {
           flex-wrap: wrap;
           margin-right: 0;
+          width: 100%;
+          height: 200%;
+          padding-bottom: 0px;
+
+          li {
+            padding-top: 10px;
+            height: 60px;
+            width: 33%;
+          }
         }
       }
 
