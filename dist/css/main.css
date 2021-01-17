@@ -711,3 +711,27 @@ html body .footer p:last-child {
     width: 100%;
   }
 }
+@media screen and (max-width: 450px) {
+  html body #nav {
+    height: 400px;
+  }
+  html body #nav .logo {
+    padding-bottom: 5px;
+  }
+  html body #nav .nav-list {
+    flex-wrap: wrap;
+    margin-right: 0;
+  }
+  html body .portfolio .portfolio-title {
+    padding-top: 20px;
+  }
+  html body .portfolio .portfolio-works {
+    width: 300px;
+  }
+  html body .portfolio .portfolio-works-item {
+    width: 100%;
+  }
+  html body .contact #contact-rest .contact-rest-details {
+    padding-left: 20px;
+  }
+}

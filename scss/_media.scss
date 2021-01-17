@@ -227,3 +227,43 @@
     }
   }
 }
+
+@media screen and (max-width: 450px) {
+  html {
+    body {
+      #nav {
+        height: 400px;
+
+        .logo {
+          padding-bottom: 5px;
+        }
+
+        .nav-list {
+          flex-wrap: wrap;
+          margin-right: 0;
+        }
+      }
+
+      .portfolio {
+        .portfolio-title {
+          padding-top: 20px;
+        }
+
+        .portfolio-works {
+          width: 300px;
+          &-item {
+            width: 100%;
+          }
+        }
+      }
+
+      .contact {
+        #contact-rest {
+          .contact-rest-details {
+            padding-left: 20px;
+          }
+        }
+      }
+    }
+  }
+}
