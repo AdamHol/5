@@ -604,9 +604,13 @@ html body .footer p:last-child {
   }
   html body .header .header-left .title {
     text-align: center;
+    padding-left: 0;
   }
   html body .header .header-left .title-2 {
     text-align: center;
+  }
+  html body .header .header-left .btn {
+    margin: 0;
   }
   html body .header .header-right {
     display: none;
@@ -639,5 +643,70 @@ html body .footer p:last-child {
   }
   html body #services .services-kind-padding {
     padding: 0 30px;
+  }
+}
+@media screen and (max-width: 850px) {
+  html body header #nav {
+    height: 150px;
+    flex-direction: column;
+  }
+  html body header #nav .logo {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  html body header #nav .nav-list {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  html body .portfolio .portfolio-works {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+  }
+  html body .portfolio .portfolio-works-item {
+    height: 400px;
+  }
+  html body .portfolio .browse-all {
+    width: 100%;
+    margin-left: 0;
+  }
+  html body #quote {
+    height: 300px;
+  }
+  html body #quote .quote-bg {
+    height: 300px;
+    padding-top: 100px;
+  }
+  html body #quote .quote-bg h2 {
+    font-size: 3rem;
+  }
+  html body #quote .quote-bg p {
+    font-size: 2rem;
+  }
+  html body .contact #contact-rest {
+    flex-direction: column;
+  }
+  html body .contact #contact-rest .contact-rest-details {
+    width: 100%;
+  }
+  html body .contact #contact-rest .contact-rest-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  html body #customers .customers-comments .wrapper .slide .content {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 530px) {
+  html body .portfolio .portfolio-title {
+    padding-top: 20px;
+  }
+  html body .portfolio .portfolio-works {
+    width: 400px;
+  }
+  html body .portfolio .portfolio-works-item {
+    width: 100%;
   }
 }
