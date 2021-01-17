@@ -63,6 +63,7 @@ html {
 }
 html body {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   background: #d1d1d1;
 }
